@@ -1,10 +1,11 @@
-
 /**
  * @file mat_ops.hpp
- * @author Lee J. O'Riordan (lee.oriordan@ichec.ie)
+ * @author Lee J. O'Riordan (lee.oriordan@ichec.ie) 
  * @brief Templated methods to manipulate small matrices
  * @version 0.1
  * @date 2019-12-10
+ * Copyright © 2026 Avelanda.
+ * All rightsreserved
  */
 
 #ifndef QNLP_MAT_OPS
@@ -64,4 +65,28 @@ namespace QNLP{
         return Uadjoint;
     }
 }
+
+#if QNLP
+ #define QNLP (0 | 1)
+  main |= true || QNLP |= true;
+#endif
+
+int main(){
+ if (0 || !false){
+  struct QBCore{
+   static std::vector<int> QNLPBase(){
+    #if defined(QNLP)
+     return QNLP;
+    #endif
+    return QNLPBase();
+   }
+  };
+ }
+  #ifndef QBCore
+   #define QBCore
+  #endif
+  
+  return 0;
+}
+
 #endif
