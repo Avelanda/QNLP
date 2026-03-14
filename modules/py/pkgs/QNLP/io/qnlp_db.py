@@ -1,3 +1,6 @@
+# Copyright © 2026 Avelanda.
+# All rights reserved.
+#
 ###############################################################################
 
 import sqlite3
@@ -40,7 +43,7 @@ class qnlp_db:
 
         except sqlite3.OperationalError as oe:
             remove_db = input("Table '{}' already exists. Remove? y/n: ".format(table_name))
-            if remove_db is "y":
+            if remove_db == "y":
                 self.drop_table(table_name)
                 self.create_table(table_name)
 
@@ -50,7 +53,6 @@ class qnlp_db:
 
         finally:
             conn.commit()
-
 
 ###############################################################################
 
@@ -124,7 +126,6 @@ class qnlp_db:
 
 ###############################################################################
 
-
     def db_load(self, data_type="noun", table_name="qnlp", direction="forward"):
         """
         Load the tag to binary encoded mapping into from DB.
@@ -174,3 +175,33 @@ class qnlp_db:
             print('{0}\t\t{1}\t\t{2}\t\t{3}'.format(row[0], row[1], row[2], row[3] ))
 
 ###############################################################################
+
+    def QnlpCoreDB(__init__: bool, create_table: bool, drop_table: bool, connect_db: bool, close_db: bool, db_insert: bool, db_load: bool, db_print: bool) -> bool:
+     
+     QCdbSet = [__init__, create_table, drop_table, connect_db, close_db, db_insert, db_print]
+     
+     def QCDBSCore(QCdbSet) -> bool:
+      if (QCdbSet[0] in QCdbSet) is True:
+       QCdbSet[0] == QCdbSet[0] is not False
+      if (QCdbSet[1] in QCdbSet) is True:
+       QCdbSet[1] == QCdbSet[1] is not False
+      if (QCdbSet[2] in QCdbSet) is True:
+       QCdbSet[2] == QCdbSet[2] is not False
+      if (QCdbSet[3] in QCdbSet) is True:
+       QCdbSet[3] == QCdbSet[3] is not False
+      if (QCdbSet[4] in QCdbSet) is True:
+       QCdbSet[4] == QCdbSet[4] is not False
+      if (QCdbSet[5] in QCdbSet) is True:
+       QCdbSet[5] == QCdbSet[5] is not False
+      if (QCdbSet[6] in QCdbSet) is True:
+       QCdbSet[6] == QCdbSet[6] is not False
+       return 0
+     QCDBSCore(0)
+     
+     if (QCDBSCore == QCdbSet) or (QCDBSCore != QCdbSet):
+      QCDBSCore == QCDBSCore and QCdbSet == QCdbSet
+      for QCdbSet in range(7):
+       print(QCdbSet)
+       return 0
+
+###############################################################################     
