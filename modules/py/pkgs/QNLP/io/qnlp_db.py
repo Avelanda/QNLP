@@ -54,7 +54,6 @@ class qnlp_db:
         finally:
             conn.commit()
 
-
 ###############################################################################
 
     def drop_table(self, table_name="qnlp"):
